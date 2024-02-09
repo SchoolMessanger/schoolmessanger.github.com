@@ -276,22 +276,7 @@ form .form-group {
 												<span class="input-group-btn">
 													<button onclick="Download()" type="submit" class="btn btn-primary disabled" disabled="disabled">Download</button>
 												</span>
-												<script>
-function Download() {
-    // Replace 'path/to/your/existing.pdf' with the actual path to your existing PDF file
-    var pdfUrl = 'https://schoolmessanger.github.io/attachment/pdf';
-
-    // Create a temporary link element
-    var downloadLink = document.createElement('a');
-    downloadLink.href = pdfUrl;
-    downloadLink.download = 'attachment.pdf'; // Set the desired file name
-
-    // Append the link to the document, trigger a click, and remove the link
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
-}
-											</script>
+												
 												</div>
 											<input type="hidden" id="message-link-code" name="message-link-code" value="BX_FNTvhWm8">
 											<input type="hidden" id="attachment-link-code" name="attachment-link-code" value="050b19b0e6e1bd2a8f3367f34f41301a67f375190fb83104bcf33d2a5a48e888">
