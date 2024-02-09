@@ -1,1 +1,30 @@
-<p>hello</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+</head>
+<body>
+
+    <!-- Your website content goes here -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    // Get the link element
+    var downloadLink = document.getElementById("download-link");
+
+    // Set the href attribute to the raw PDF file URL
+    downloadLink.href = "YOUR_RAW_PDF_URL";
+
+    // Set the download attribute with the desired file name
+    downloadLink.download = "YOUR_PDF_FILE_NAME.pdf";
+
+    // Trigger the click event to start the download
+    downloadLink.click();
+});
+
+    </script>
+</body>
+</html>
+
